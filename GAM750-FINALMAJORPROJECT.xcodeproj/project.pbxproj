@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		18188A0D25D3EB8200744C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18188A0C25D3EB8200744C12 /* AppDelegate.swift */; };
 		18188A0F25D3EB8200744C12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18188A0E25D3EB8200744C12 /* SceneDelegate.swift */; };
-		18188A1125D3EB8200744C12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18188A1025D3EB8200744C12 /* ViewController.swift */; };
 		18188A1425D3EB8200744C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18188A1225D3EB8200744C12 /* Main.storyboard */; };
 		18188A1625D3EB8200744C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18188A1525D3EB8200744C12 /* Assets.xcassets */; };
 		18188A1925D3EB8200744C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18188A1725D3EB8200744C12 /* LaunchScreen.storyboard */; };
 		18188A2425D3EB8200744C12 /* GAM750_FINALMAJORPROJECTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18188A2325D3EB8200744C12 /* GAM750_FINALMAJORPROJECTTests.swift */; };
 		18188A2F25D3EB8200744C12 /* GAM750_FINALMAJORPROJECTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18188A2E25D3EB8200744C12 /* GAM750_FINALMAJORPROJECTUITests.swift */; };
+		18188A4025D3ECA000744C12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18188A3F25D3ECA000744C12 /* GoogleService-Info.plist */; };
+		18C68C1325D697B800AD9210 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C68C1225D697B800AD9210 /* WelcomeViewController.swift */; };
+		18C68C1825D697CC00AD9210 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C68C1725D697CC00AD9210 /* RegisterViewController.swift */; };
+		9F397EAC2AABFF550A8CAA27 /* Pods_GAM750_FINALMAJORPROJECT_GAM750_FINALMAJORPROJECTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3C73AD0DF39F9735384EA1 /* Pods_GAM750_FINALMAJORPROJECT_GAM750_FINALMAJORPROJECTUITests.framework */; };
+		A5EE9D7B82D8FB09F44D0B31 /* Pods_GAM750_FINALMAJORPROJECT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A736CFDEBE4D193CCB56222C /* Pods_GAM750_FINALMAJORPROJECT.framework */; };
+		DFD7C3EF7D5BF0C1CBD4F09B /* Pods_GAM750_FINALMAJORPROJECTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BED0912FCFA31512ED61586 /* Pods_GAM750_FINALMAJORPROJECTTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		18188A0925D3EB8200744C12 /* GAM750-FINALMAJORPROJECT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GAM750-FINALMAJORPROJECT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18188A0C25D3EB8200744C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18188A0E25D3EB8200744C12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18188A1025D3EB8200744C12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18188A1325D3EB8200744C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18188A1525D3EB8200744C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18188A1825D3EB8200744C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,18 @@
 		18188A2A25D3EB8200744C12 /* GAM750-FINALMAJORPROJECTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GAM750-FINALMAJORPROJECTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18188A2E25D3EB8200744C12 /* GAM750_FINALMAJORPROJECTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAM750_FINALMAJORPROJECTUITests.swift; sourceTree = "<group>"; };
 		18188A3025D3EB8200744C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18188A3F25D3ECA000744C12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18C68C1225D697B800AD9210 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		18C68C1725D697CC00AD9210 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3BED0912FCFA31512ED61586 /* Pods_GAM750_FINALMAJORPROJECTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAM750_FINALMAJORPROJECTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BCA99AC1454E38DAFE4D993 /* Pods-GAM750-FINALMAJORPROJECT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAM750-FINALMAJORPROJECT.release.xcconfig"; path = "Target Support Files/Pods-GAM750-FINALMAJORPROJECT/Pods-GAM750-FINALMAJORPROJECT.release.xcconfig"; sourceTree = "<group>"; };
+		7F3C73AD0DF39F9735384EA1 /* Pods_GAM750_FINALMAJORPROJECT_GAM750_FINALMAJORPROJECTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAM750_FINALMAJORPROJECT_GAM750_FINALMAJORPROJECTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A736CFDEBE4D193CCB56222C /* Pods_GAM750_FINALMAJORPROJECT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAM750_FINALMAJORPROJECT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2EBF022AF4C02BDCF2B40CB /* Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests.release.xcconfig"; path = "Target Support Files/Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests/Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D385E5AB637AC8138E7D0B92 /* Pods-GAM750-FINALMAJORPROJECT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAM750-FINALMAJORPROJECT.debug.xcconfig"; path = "Target Support Files/Pods-GAM750-FINALMAJORPROJECT/Pods-GAM750-FINALMAJORPROJECT.debug.xcconfig"; sourceTree = "<group>"; };
+		D63907A93068CD699B365539 /* Pods-GAM750-FINALMAJORPROJECTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAM750-FINALMAJORPROJECTTests.debug.xcconfig"; path = "Target Support Files/Pods-GAM750-FINALMAJORPROJECTTests/Pods-GAM750-FINALMAJORPROJECTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD260758F88B384A8A66B4A7 /* Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests.debug.xcconfig"; path = "Target Support Files/Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests/Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F99D9A07CEECDE26ED9E0CE9 /* Pods-GAM750-FINALMAJORPROJECTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAM750-FINALMAJORPROJECTTests.release.xcconfig"; path = "Target Support Files/Pods-GAM750-FINALMAJORPROJECTTests/Pods-GAM750-FINALMAJORPROJECTTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5EE9D7B82D8FB09F44D0B31 /* Pods_GAM750_FINALMAJORPROJECT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD7C3EF7D5BF0C1CBD4F09B /* Pods_GAM750_FINALMAJORPROJECTTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F397EAC2AABFF550A8CAA27 /* Pods_GAM750_FINALMAJORPROJECT_GAM750_FINALMAJORPROJECTUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12AFE0CC7CDA16F40EC4921F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A736CFDEBE4D193CCB56222C /* Pods_GAM750_FINALMAJORPROJECT.framework */,
+				7F3C73AD0DF39F9735384EA1 /* Pods_GAM750_FINALMAJORPROJECT_GAM750_FINALMAJORPROJECTUITests.framework */,
+				3BED0912FCFA31512ED61586 /* Pods_GAM750_FINALMAJORPROJECTTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18188A0025D3EB8200744C12 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				18188A2225D3EB8200744C12 /* GAM750-FINALMAJORPROJECTTests */,
 				18188A2D25D3EB8200744C12 /* GAM750-FINALMAJORPROJECTUITests */,
 				18188A0A25D3EB8200744C12 /* Products */,
+				9C47E997C60CD7CE9D35B04E /* Pods */,
+				12AFE0CC7CDA16F40EC4921F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +132,13 @@
 			children = (
 				18188A0C25D3EB8200744C12 /* AppDelegate.swift */,
 				18188A0E25D3EB8200744C12 /* SceneDelegate.swift */,
-				18188A1025D3EB8200744C12 /* ViewController.swift */,
 				18188A1225D3EB8200744C12 /* Main.storyboard */,
+				18C68C1225D697B800AD9210 /* WelcomeViewController.swift */,
+				18C68C1725D697CC00AD9210 /* RegisterViewController.swift */,
 				18188A1525D3EB8200744C12 /* Assets.xcassets */,
 				18188A1725D3EB8200744C12 /* LaunchScreen.storyboard */,
 				18188A1A25D3EB8200744C12 /* Info.plist */,
+				18188A3F25D3ECA000744C12 /* GoogleService-Info.plist */,
 			);
 			path = "GAM750-FINALMAJORPROJECT";
 			sourceTree = "<group>";
@@ -128,6 +161,19 @@
 			path = "GAM750-FINALMAJORPROJECTUITests";
 			sourceTree = "<group>";
 		};
+		9C47E997C60CD7CE9D35B04E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D385E5AB637AC8138E7D0B92 /* Pods-GAM750-FINALMAJORPROJECT.debug.xcconfig */,
+				5BCA99AC1454E38DAFE4D993 /* Pods-GAM750-FINALMAJORPROJECT.release.xcconfig */,
+				DD260758F88B384A8A66B4A7 /* Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests.debug.xcconfig */,
+				C2EBF022AF4C02BDCF2B40CB /* Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests.release.xcconfig */,
+				D63907A93068CD699B365539 /* Pods-GAM750-FINALMAJORPROJECTTests.debug.xcconfig */,
+				F99D9A07CEECDE26ED9E0CE9 /* Pods-GAM750-FINALMAJORPROJECTTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18188A3325D3EB8200744C12 /* Build configuration list for PBXNativeTarget "GAM750-FINALMAJORPROJECT" */;
 			buildPhases = (
+				02A4ACB7626847B394FBFCDC /* [CP] Check Pods Manifest.lock */,
 				18188A0525D3EB8200744C12 /* Sources */,
 				18188A0625D3EB8200744C12 /* Frameworks */,
 				18188A0725D3EB8200744C12 /* Resources */,
+				759CD86332A371081E88C8C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18188A3625D3EB8200744C12 /* Build configuration list for PBXNativeTarget "GAM750-FINALMAJORPROJECTTests" */;
 			buildPhases = (
+				7DF360327D32638655EF87D2 /* [CP] Check Pods Manifest.lock */,
 				18188A1B25D3EB8200744C12 /* Sources */,
 				18188A1C25D3EB8200744C12 /* Frameworks */,
 				18188A1D25D3EB8200744C12 /* Resources */,
@@ -170,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18188A3925D3EB8200744C12 /* Build configuration list for PBXNativeTarget "GAM750-FINALMAJORPROJECTUITests" */;
 			buildPhases = (
+				CE9F6AA95C4DC765DD1CAA03 /* [CP] Check Pods Manifest.lock */,
 				18188A2625D3EB8200744C12 /* Sources */,
 				18188A2725D3EB8200744C12 /* Frameworks */,
 				18188A2825D3EB8200744C12 /* Resources */,
+				D48E0BC417DF943B4BC89652 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18188A1925D3EB8200744C12 /* LaunchScreen.storyboard in Resources */,
+				18188A4025D3ECA000744C12 /* GoogleService-Info.plist in Resources */,
 				18188A1625D3EB8200744C12 /* Assets.xcassets in Resources */,
 				18188A1425D3EB8200744C12 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +305,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02A4ACB7626847B394FBFCDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GAM750-FINALMAJORPROJECT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		759CD86332A371081E88C8C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GAM750-FINALMAJORPROJECT/Pods-GAM750-FINALMAJORPROJECT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GAM750-FINALMAJORPROJECT/Pods-GAM750-FINALMAJORPROJECT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GAM750-FINALMAJORPROJECT/Pods-GAM750-FINALMAJORPROJECT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF360327D32638655EF87D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GAM750-FINALMAJORPROJECTTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE9F6AA95C4DC765DD1CAA03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D48E0BC417DF943B4BC89652 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests/Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests/Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests/Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18188A0525D3EB8200744C12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18188A1125D3EB8200744C12 /* ViewController.swift in Sources */,
+				18C68C1325D697B800AD9210 /* WelcomeViewController.swift in Sources */,
 				18188A0D25D3EB8200744C12 /* AppDelegate.swift in Sources */,
 				18188A0F25D3EB8200744C12 /* SceneDelegate.swift in Sources */,
+				18C68C1825D697CC00AD9210 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +589,7 @@
 		};
 		18188A3425D3EB8200744C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D385E5AB637AC8138E7D0B92 /* Pods-GAM750-FINALMAJORPROJECT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +609,7 @@
 		};
 		18188A3525D3EB8200744C12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BCA99AC1454E38DAFE4D993 /* Pods-GAM750-FINALMAJORPROJECT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +629,7 @@
 		};
 		18188A3725D3EB8200744C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D63907A93068CD699B365539 /* Pods-GAM750-FINALMAJORPROJECTTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +652,7 @@
 		};
 		18188A3825D3EB8200744C12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F99D9A07CEECDE26ED9E0CE9 /* Pods-GAM750-FINALMAJORPROJECTTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +675,7 @@
 		};
 		18188A3A25D3EB8200744C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD260758F88B384A8A66B4A7 /* Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +696,7 @@
 		};
 		18188A3B25D3EB8200744C12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2EBF022AF4C02BDCF2B40CB /* Pods-GAM750-FINALMAJORPROJECT-GAM750-FINALMAJORPROJECTUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

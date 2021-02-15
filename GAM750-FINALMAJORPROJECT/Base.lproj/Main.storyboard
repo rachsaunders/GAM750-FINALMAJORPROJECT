@@ -98,6 +98,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="Gm7-2H-2bD" id="4Mf-ce-q4w"/>
                         <outlet property="emailTextField" destination="Je4-F5-S2N" id="UiT-o0-bVN"/>
                         <outlet property="passwordTextField" destination="Uej-VH-NK6" id="ost-KA-uIW"/>
                     </connections>
@@ -186,6 +187,9 @@
                                     <segment title="Male"/>
                                     <segment title="Female"/>
                                 </segments>
+                                <connections>
+                                    <action selector="genderSegmentValueChanged:" destination="Qa3-Nb-7VJ" eventType="valueChanged" id="Xg9-nK-MG9"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp9-xP-fQI">
                                 <rect key="frame" x="85" y="782" width="195" height="21"/>
@@ -213,6 +217,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="C4e-lv-Zuv" id="NW4-Dk-qlz"/>
                         <outlet property="cityTextField" destination="xsN-hX-v3H" id="Gy7-pq-rRe"/>
                         <outlet property="confirmPasswordTextField" destination="Nvr-vB-j6R" id="xiW-uG-tAK"/>
                         <outlet property="dateOfBirthTextField" destination="r1v-lR-VUx" id="udT-Nv-3fa"/>
@@ -225,6 +230,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdu-xs-6ed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="813.04347826086962" y="99.776785714285708"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="Zza-oQ-hpR">
+            <objects>
+                <viewController id="qnR-D7-Xk3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MpH-bY-uYe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hcm-Hb-Xbn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="T1m-Y7-OLx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qiq-hp-JAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2607" y="404"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="mRZ-AY-0p5">
+            <objects>
+                <viewController id="qvL-dc-pWJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dLL-wY-PCY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="elx-e5-4xl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="MjF-U6-FqZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akU-mu-eUW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2607" y="-202"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yDc-z0-Jwt">
+            <objects>
+                <tabBarController storyboardIdentifier="MainView" id="hLn-Zp-AT4" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vzO-wa-BWg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qvL-dc-pWJ" kind="relationship" relationship="viewControllers" id="k47-C9-hym"/>
+                        <segue destination="qnR-D7-Xk3" kind="relationship" relationship="viewControllers" id="mjc-7W-IC6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drM-Jy-cfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1717" y="102"/>
         </scene>
     </scenes>
     <resources>

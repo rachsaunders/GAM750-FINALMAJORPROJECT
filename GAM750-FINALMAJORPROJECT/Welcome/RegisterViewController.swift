@@ -24,6 +24,7 @@ class RegisterViewController: UIViewController {
     //MARK:- VARIABLES
     
     var isMale = true
+    var datePicker = UIDatePicker()
     
     //MARK:- VIEW LIFE CYCLE
     override func viewDidLoad() {
@@ -31,6 +32,7 @@ class RegisterViewController: UIViewController {
         
         overrideUserInterfaceStyle = .dark
         setupBackgroundTouch()
+        setupDatePicker()
  
     }
     
@@ -67,6 +69,28 @@ class RegisterViewController: UIViewController {
     
     //MARK:- SETUP
     
+    private func setupDatePicker() {
+        datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(handleDatePicker), for: .valueChanged)
+        dateOfBirthTextField.inputView = datePicker
+        
+        let toolBar = UIToolbar()
+        toolBar.barStyle = .default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = .blue
+        toolBar.sizeToFit()
+        
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(dismissKeyboard))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissKeyboard))
+        
+        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        
+        dateOfBirthTextField.inputAccessoryView = toolBar
+        
+    }
+    
     private func setupBackgroundTouch() {
         
         backgroundImageView.isUserInteractionEnabled = true
@@ -80,10 +104,16 @@ class RegisterViewController: UIViewController {
     }
     
     //MARK:- HELPERS
-    private func dismissKeyboard() {
+    @objc func dismissKeyboard() {
         self.view.endEditing(false)
     }
     
+    @objc func handleDatePicker() {
+        dateOfBirthTextField.text = datePicker.date.longDate()
+        
+    }
+    
+
     
     private func isTextDataImputed() -> Bool {
     

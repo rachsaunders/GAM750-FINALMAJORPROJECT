@@ -61,8 +61,7 @@ class WelcomeViewController: UIViewController {
                 } else if isEmailVerified {
                     
                     ProgressHUD.dismiss()
-                    print("Go To App...needs coding obviously")
-                    //enter application
+                    self.goToApp()
                     
                 } else {
                     ProgressHUD.showError("Please verify your email!")
@@ -94,6 +93,16 @@ class WelcomeViewController: UIViewController {
     //MARK:- HELPERS
     private func dismissKeyboard() {
         self.view.endEditing(false)
+    }
+    
+    //MARK:- NAVIGATION
+    
+    private func goToApp() {
+        
+        let mainView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "MainView") as! UITabBarController
+        
+        mainView.modalPresentationStyle = .fullScreen
+        self.present(mainView, animated: true, completion: nil)
     }
     
 }

@@ -22,6 +22,7 @@
 		18C68C1D25D69F6200AD9210 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C68C1C25D69F6200AD9210 /* FUser.swift */; };
 		18C68C2225D6A7CB00AD9210 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C68C2125D6A7CB00AD9210 /* Constants.swift */; };
 		18CFE29625DD287D00DAE025 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CFE29525DD287D00DAE025 /* Extensions.swift */; };
+		18CFE29B25DD38F500DAE025 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CFE29A25DD38F500DAE025 /* ProfileTableViewController.swift */; };
 		9F397EAC2AABFF550A8CAA27 /* Pods_GAM750_FINALMAJORPROJECT_GAM750_FINALMAJORPROJECTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3C73AD0DF39F9735384EA1 /* Pods_GAM750_FINALMAJORPROJECT_GAM750_FINALMAJORPROJECTUITests.framework */; };
 		A5EE9D7B82D8FB09F44D0B31 /* Pods_GAM750_FINALMAJORPROJECT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A736CFDEBE4D193CCB56222C /* Pods_GAM750_FINALMAJORPROJECT.framework */; };
 		DFD7C3EF7D5BF0C1CBD4F09B /* Pods_GAM750_FINALMAJORPROJECTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BED0912FCFA31512ED61586 /* Pods_GAM750_FINALMAJORPROJECTTests.framework */; };
@@ -66,6 +67,7 @@
 		18C68C1C25D69F6200AD9210 /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
 		18C68C2125D6A7CB00AD9210 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18CFE29525DD287D00DAE025 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		18CFE29A25DD38F500DAE025 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		3BED0912FCFA31512ED61586 /* Pods_GAM750_FINALMAJORPROJECTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAM750_FINALMAJORPROJECTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BCA99AC1454E38DAFE4D993 /* Pods-GAM750-FINALMAJORPROJECT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAM750-FINALMAJORPROJECT.release.xcconfig"; path = "Target Support Files/Pods-GAM750-FINALMAJORPROJECT/Pods-GAM750-FINALMAJORPROJECT.release.xcconfig"; sourceTree = "<group>"; };
 		7F3C73AD0DF39F9735384EA1 /* Pods_GAM750_FINALMAJORPROJECT_GAM750_FINALMAJORPROJECTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAM750_FINALMAJORPROJECT_GAM750_FINALMAJORPROJECTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 			children = (
 				18188A0C25D3EB8200744C12 /* AppDelegate.swift */,
 				18188A0E25D3EB8200744C12 /* SceneDelegate.swift */,
+				18CFE29A25DD38F500DAE025 /* ProfileTableViewController.swift */,
 				18188A1225D3EB8200744C12 /* Main.storyboard */,
 				183D035225DA89B20008F7B1 /* Welcome */,
 				183D034D25DA899E0008F7B1 /* Model */,
@@ -458,6 +461,7 @@
 				18C68C1325D697B800AD9210 /* WelcomeViewController.swift in Sources */,
 				18188A0D25D3EB8200744C12 /* AppDelegate.swift in Sources */,
 				18188A0F25D3EB8200744C12 /* SceneDelegate.swift in Sources */,
+				18CFE29B25DD38F500DAE025 /* ProfileTableViewController.swift in Sources */,
 				18C68C1825D697CC00AD9210 /* RegisterViewController.swift in Sources */,
 				183D035725DA8A110008F7B1 /* FCollectionReference.swift in Sources */,
 				18C68C2225D6A7CB00AD9210 /* Constants.swift in Sources */,

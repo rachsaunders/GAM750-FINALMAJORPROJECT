@@ -307,7 +307,7 @@
         <scene sceneID="2jp-0V-gkj">
             <objects>
                 <tableViewController id="UxB-BN-9A7" customClass="ProfileTableViewController" customModule="GAM750_FINALMAJORPROJECT" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fhj-9Z-Vzt">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fhj-9Z-Vzt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -371,7 +371,7 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="Qs6-lr-0ax" firstAttribute="leading" secondItem="hz0-AB-iFd" secondAttribute="leading" constant="8" id="Aft-1z-lLg"/>
                                                         <constraint firstItem="a92-i4-u9E" firstAttribute="leading" secondItem="p4U-k0-Ahh" secondAttribute="trailing" constant="20" id="BCU-hP-4DA"/>
@@ -396,6 +396,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.77656141489999997" green="0.84245815899999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="hz0-AB-iFd" secondAttribute="bottom" id="BQS-ML-AbH"/>
                                                 <constraint firstItem="hz0-AB-iFd" firstAttribute="top" secondItem="7SN-kv-jF8" secondAttribute="top" id="Rob-kt-vkK"/>
@@ -645,17 +646,19 @@
                     <navigationItem key="navigationItem" title="Profile" id="3K2-m2-lF3"/>
                     <connections>
                         <outlet property="aboutMeTextView" destination="RNX-OR-SAl" id="Kfq-pz-wHy"/>
+                        <outlet property="aboutMeView" destination="sQ5-8D-yR9" id="S5e-01-7bf"/>
                         <outlet property="avatarImageView" destination="dXf-gH-mMq" id="2eH-Hc-ESM"/>
                         <outlet property="cityCountryLabel" destination="Qs6-lr-0ax" id="M7r-cx-4qd"/>
                         <outlet property="cityTextField" destination="y3Y-Su-EBE" id="aLe-Sm-CQr"/>
                         <outlet property="countryTextField" destination="uPx-qT-mgP" id="4bO-b1-RbJ"/>
                         <outlet property="diagnosesTextView" destination="TWp-KR-a0i" id="XJk-Ze-LaK"/>
-                        <outlet property="educationTextField" destination="aBp-Pe-VmW" id="s7U-SI-M0i"/>
+                        <outlet property="diagnosesView" destination="G9H-Xt-Wdc" id="DQJ-o3-Mhl"/>
                         <outlet property="genderTextField" destination="p8I-RO-O5Q" id="ZUM-KN-yWf"/>
                         <outlet property="jobTextField" destination="fTN-6l-WKS" id="0Qi-U9-8Z4"/>
                         <outlet property="lookingForTextField" destination="6FU-w1-Gw3" id="fed-WX-344"/>
                         <outlet property="nameAgeLabel" destination="Wp7-7P-6Ha" id="kT7-mE-GWS"/>
-                        <outlet property="profileCellBackground" destination="hz0-AB-iFd" id="cat-uc-OQU"/>
+                        <outlet property="professionTextField" destination="aBp-Pe-VmW" id="s7U-SI-M0i"/>
+                        <outlet property="profileCellBackgroundView" destination="hz0-AB-iFd" id="cat-uc-OQU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qrl-Tb-g4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

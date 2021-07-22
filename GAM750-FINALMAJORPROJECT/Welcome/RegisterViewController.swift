@@ -34,7 +34,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        overrideUserInterfaceStyle = .dark
+        overrideUserInterfaceStyle = .light
         setupBackgroundTouch()
         setupDatePicker()
  

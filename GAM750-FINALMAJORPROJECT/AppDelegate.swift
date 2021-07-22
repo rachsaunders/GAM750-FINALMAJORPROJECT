@@ -98,7 +98,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             user.pushId = newPushId
             user.saveUserLocally()
             user.updateCurrentUserInFireStore(withValues: [kPUSHID : newPushId]) { (error) in
-                print("updated user push id with error ", error?.localizedDescription)
+                print("updated user push id with error ")
             }
         }
     }

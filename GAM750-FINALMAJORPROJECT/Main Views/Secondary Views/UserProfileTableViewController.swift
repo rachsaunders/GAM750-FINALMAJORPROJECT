@@ -335,6 +335,7 @@ class UserProfileTableViewController: UITableViewController {
    
 }
 
+//MARK:- EXTENSIONS
 
 
 extension UserProfileTableViewController : UICollectionViewDataSource {

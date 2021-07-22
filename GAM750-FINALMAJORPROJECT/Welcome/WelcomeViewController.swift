@@ -26,7 +26,7 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         // Dark Style as default so the user can see the test version text fields
-        overrideUserInterfaceStyle = .dark
+        overrideUserInterfaceStyle = .light
         setupBackgroundTouch()
 
   

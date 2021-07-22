@@ -296,7 +296,7 @@ class FirebaseListener {
         
         
         FirebaseReference(.Recent).document(recent.objectId).updateData(values) { (error) in
-            print("error updating recent ", error)
+            print("error updating recent ")
         }
     }
     
@@ -322,7 +322,7 @@ class FirebaseListener {
         
         FirebaseReference(.Recent).document(recent.objectId).updateData(values) { (error) in
             
-            print("Reset recent counter", error)
+            print("Reset recent counter")
         }
     }
     

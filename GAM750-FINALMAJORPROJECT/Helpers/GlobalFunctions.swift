@@ -47,7 +47,7 @@ func saveLikeToUser(userId: String) {
             
             currentUser.updateCurrentUserInFireStore(withValues: [kLIKEDIDARRAY: currentUser.likedIdArray!]) { (error) in
                 
-                print("updated current user with error ", error?.localizedDescription)
+                print("updated current user with error")
             }
         }
     }

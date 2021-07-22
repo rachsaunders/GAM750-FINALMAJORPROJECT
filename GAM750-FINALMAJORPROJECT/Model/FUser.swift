@@ -229,7 +229,7 @@ class FUser: Equatable {
               
                 
                 authData!.user.sendEmailVerification { (error) in
-                    print("auth email verification sent ", error?.localizedDescription)
+                    print("auth email verification sent ")
                 }
                 
                 
@@ -352,7 +352,7 @@ class FUser: Equatable {
     
 }
 
-
+// The below function creates dummy users. I did this just for the purpose of swipe/like/match testing.
 
 func createUsers() {
     

@@ -4,6 +4,14 @@
 //
 //  Created by Rachel Saunders on 10/02/2021.
 //
+//
+//
+//
+// This is my Final Major Project for the course MA Creative App Development at Falmouth University.
+//
+//
+
+
 
 import UIKit
 import FirebaseAuth

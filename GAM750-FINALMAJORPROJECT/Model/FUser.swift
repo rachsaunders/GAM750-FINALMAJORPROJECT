@@ -4,6 +4,10 @@
 //
 //  Created by Rachel Saunders on 12/02/2021.
 //
+//
+//
+// This is my Final Major Project for the course MA Creative App Development at Falmouth University.
+//
 
 import Foundation
 import Firebase
@@ -144,6 +148,10 @@ class FUser: Equatable {
             dateOfBirth = _dictionary[kDATEOFBIRTH] as? Date ?? Date()
         }
         
+        let placeHolder = isMale ? "profile" : "profile"
+        
+        avatar = UIImage (contentsOfFile: fileInDocumentsDirectory(filename: self.objectId)) ?? UIImage(named: placeHolder)
+        
         
         
     }
@@ -167,7 +175,18 @@ class FUser: Equatable {
         
     }
     
-    
+    func getUserAvatarFromFirestore(completion: @escaping (_ didSet: Bool) -> Void) {
+        
+        FileStorage.downloadImage(imageUrl: self.avatarLink) { (avatarImage) in
+        
+            let placeholder = self.isMale ? "mPlaceholder" : "fPlaceholder"
+            self.avatar = avatarImage ?? UIImage(named: placeholder)
+            
+            completion(true)
+            
+        }
+        
+    }
     
     //MARK:- LOGIN
     
@@ -226,9 +245,26 @@ class FUser: Equatable {
         
     }
     
+    //MARK:- EDIT USER PROFILE
+    
+    func updateUserEmail(newEmail: String, completion: @escaping (_ error: Error?) -> Void) {
+        
+        Auth.auth().currentUser?.updateEmail(to: newEmail, completion: { (error) in
+            
+            FUser.resendVerificationEmail(email: newEmail) { (error) in
+                
+                
+                
+            }
+            completion(error)
+            
+        })
+        
+    }
+    
     //MARK:- RESEND LINKS
 
-    class func resetPasswordFor(email: String, completion: @escaping (_ error: Error?) -> Void) {
+    class func resendVerificationEmail(email: String, completion: @escaping (_ error: Error?) -> Void) {
         
         Auth.auth().currentUser?.reload(completion: { (error) in
             
@@ -240,6 +276,36 @@ class FUser: Equatable {
         })
     
     
+    }
+    
+    
+    
+    class func resetPassword(email: String, completion: @escaping (_ error: Error?) -> Void) {
+     
+        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+             
+            
+             completion(error)
+        }
+        
+    }
+    
+    //MARK:- LOG OUT THE USER
+    
+    class func logOutCurrentUser(completion: @escaping (_ error: Error?) -> Void) {
+        
+        do {
+            try  Auth.auth().signOut()
+            
+            userDefaults.removeObject(forKey: kCURRENTUSER)
+            userDefaults.synchronize()
+            completion(nil)
+            
+        } catch let error as NSError{
+            completion(error)
+        }
+       
+        
     }
     
     
@@ -260,5 +326,72 @@ class FUser: Equatable {
             
         }
     }
+    
+    
+    
+    //MARK:- UPDATE USER FUNCTIONS
+    
+    func updateCurrentUserInFireStore(withValues: [String : Any], completion: @escaping (_ error: Error?) -> Void) {
+        
+        if let dictionary = userDefaults.object(forKey: kCURRENTUSER) {
+            
+            let userObject = (dictionary as! NSDictionary).mutableCopy() as! NSMutableDictionary
+            userObject.setValuesForKeys(withValues)
+            
+            FirebaseReference(.User).document(FUser.currentId()).updateData(withValues) {
+                error in
+                
+                completion(error)
+                if error == nil {
+                    FUser(_dictionary: userObject).saveUserLocally()
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+
+func createUsers() {
+    
+    let names = ["Tom Saunders", "Jane Saunders", "Martin Saunders", "Jane Gavarni", "Daryl Nicholson", "Grace McAloon"]
+    
+    var imageIndex = 1
+    var userIndex = 1
+    var isMale = true
+    
+    
+    
+    for i in 0..<5 {
+     
+        let id = UUID().uuidString
+        
+        let fileDirectory = "Avatars/_" + id + ".jpg"
+        
+        
+        FileStorage.uploadImage(UIImage(named: "user\(imageIndex)")!, directory: fileDirectory) { (avatarLink) in
+            
+            let user = FUser(_objectId: id, _email: "user\(userIndex)@mail.com", _username: names[i], _city: "No City", _dateOfBirth: Date(), _isMale: isMale, _avatarLink: avatarLink ?? "")
+            
+            isMale.toggle()
+            userIndex += 1
+            user.saveUserToFirestore()
+        }
+        
+        imageIndex += 1
+        
+        if imageIndex == 6 {
+            imageIndex = 1
+        }
+        
+    }
+        
+        
+        
+        
+        
+        
     
 }

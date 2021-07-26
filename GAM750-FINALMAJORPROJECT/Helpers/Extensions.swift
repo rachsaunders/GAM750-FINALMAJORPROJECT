@@ -47,7 +47,7 @@ extension UIColor {
     
     func primary() -> UIColor {
         
-        return UIColor(red: 20/255, green: 45/255, blue: 85/255, alpha: 1)
+        return UIColor(red: 0/255, green: 219/255, blue: 255/255, alpha: 1.0)
     }
     
     func tabBarUnselected() -> UIColor {
@@ -57,7 +57,6 @@ extension UIColor {
     
     static var sampleRed = UIColor(red: 252/255, green: 70/255, blue: 93/255, alpha: 1)
     static var sampleGreen = UIColor(red: 49/255, green: 193/255, blue: 109/255, alpha: 1)
-    
     
     
     

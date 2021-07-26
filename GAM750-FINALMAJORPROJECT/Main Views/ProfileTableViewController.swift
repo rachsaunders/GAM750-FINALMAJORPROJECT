@@ -105,8 +105,9 @@ class ProfileTableViewController: UITableViewController {
         
         let user = FUser.currentUser()!
         
-        user.diagnoses = diagnosesTextView.text
+
         user.about = aboutMeTextView.text
+        user.diagnoses = diagnosesTextView.text
         user.jobTitle = jobTextField.text ?? ""
         user.profession = professionTextField.text ?? ""
         user.isMale = genderTextField.text == "Male"
@@ -190,8 +191,9 @@ class ProfileTableViewController: UITableViewController {
         
         
         cityCountryLabel.text = currentUser.country + "," + currentUser.city
-        diagnosesTextView.text = currentUser.diagnoses != "" ? currentUser.about : "E.g. Bipolar I, PTSD..."
+     
         aboutMeTextView.text = currentUser.about != "" ? currentUser.about : "A little bit about me..."
+        diagnosesTextView.text = currentUser.diagnoses != "" ? currentUser.about : "E.g. Bipolar I, PTSD..."
         jobTextField.text =  currentUser.jobTitle
         professionTextField.text = currentUser.profession
         genderTextField.text = currentUser.isMale ? "Male" : "Female"
@@ -225,6 +227,7 @@ class ProfileTableViewController: UITableViewController {
     
     private func showKeyboard() {
         
+        self.diagnosesTextView.becomeFirstResponder()
         self.aboutMeTextView.becomeFirstResponder()
     }
     

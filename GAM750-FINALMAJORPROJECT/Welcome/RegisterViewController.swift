@@ -18,7 +18,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var cityTextField: UITextField!
-    @IBOutlet weak var dateOfBirthTextField: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var genderSegmentOutlet: UISegmentedControl!
@@ -28,7 +28,6 @@ class RegisterViewController: UIViewController {
     //MARK:- VARIABLES
     
     var isMale = true
-    var datePicker = UIDatePicker()
     
     //MARK:- VIEW LIFE CYCLE
     override func viewDidLoad() {
@@ -36,7 +35,7 @@ class RegisterViewController: UIViewController {
         
         overrideUserInterfaceStyle = .light
         setupBackgroundTouch()
-        setupDatePicker()
+     
  
     }
     
@@ -73,27 +72,7 @@ class RegisterViewController: UIViewController {
     
     //MARK:- SETUP
     
-    private func setupDatePicker() {
-        datePicker.datePickerMode = .date
-        datePicker.addTarget(self, action: #selector(handleDatePicker), for: .valueChanged)
-        dateOfBirthTextField.inputView = datePicker
-        
-        let toolBar = UIToolbar()
-        toolBar.barStyle = .default
-        toolBar.isTranslucent = true
-        toolBar.tintColor = .blue
-        toolBar.sizeToFit()
-        
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(dismissKeyboard))
-        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissKeyboard))
-        
-        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: true)
-        toolBar.isUserInteractionEnabled = true
-        
-        dateOfBirthTextField.inputAccessoryView = toolBar
-        
-    }
+  
     
     private func setupBackgroundTouch() {
         
@@ -112,16 +91,13 @@ class RegisterViewController: UIViewController {
         self.view.endEditing(false)
     }
     
-    @objc func handleDatePicker() {
-        dateOfBirthTextField.text = datePicker.date.longDate()
-        
-    }
+
     
 
     
     private func isTextDataImputed() -> Bool {
     
-        return usernameTextField.text != "" && emailTextField.text != "" && cityTextField.text != "" && dateOfBirthTextField.text != "" && passwordTextField.text != "" && confirmPasswordTextField.text != ""
+        return usernameTextField.text != "" && emailTextField.text != "" && cityTextField.text != "" && passwordTextField.text != "" && confirmPasswordTextField.text != ""
         
     }
     
@@ -130,7 +106,7 @@ class RegisterViewController: UIViewController {
         
         ProgressHUD.show()
         
-        FUser.registerUserWith(email: emailTextField.text!, password: passwordTextField.text!, userName: usernameTextField.text!, city: cityTextField.text!, isMale: isMale, dateOfBirth: Date(), completion: { error in
+        FUser.registerUserWith(email: emailTextField.text!, password: passwordTextField.text!, userName: usernameTextField.text!, city: cityTextField.text!, isMale: isMale, dateOfBirth: datePicker.date, completion: { error in
             
     
             
